@@ -2,13 +2,12 @@ var express=require("express");
 var mongoose=require("mongoose");
 
  
-var url= process.env.DatabaseURL || "mongodb://localhost:27017/thumbnail";
+var url= process.env.DATABASEURL || "mongodb://localhost:27017/thumbnail";
 
 mongoose.connect(url);
 
 // mongoose.connect("mongodb://omarr:omar1234@ds159263.mlab.com:59263/yelpcamping");
 
-console.log(process.env.DatabaseURL)
 
 var Thumbnail=require("./models/campgrounds.js");
 var Comment=require("./models/comments.js");
