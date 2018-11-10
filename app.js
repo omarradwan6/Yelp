@@ -1,7 +1,11 @@
 var express=require("express");
 var mongoose=require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/thumbnail");
+// mongoose.connect("mongodb://localhost:27017/thumbnail");
+
+mongoose.connect("mongodb://<omar>:<Arsenal@1234>@ds159263.mlab.com:59263/yelpcamping");
+
+
 
 var Thumbnail=require("./models/campgrounds.js");
 var Comment=require("./models/comments.js");
