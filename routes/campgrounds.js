@@ -117,7 +117,7 @@ function isLoggedIn(req, res, next){
         return next();
     }
     
-    req.flash("error","You need to be loogged in first")
+    req.flash("error","You need to be logged in first")
     res.redirect("/login");
 }
 
